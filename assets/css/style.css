@@ -8120,7 +8120,7 @@ a.text-theme:hover,
 }
 
 .footer-layout1 .footer-top {
-  background-color: #3fd2c7;
+  background-color: #141d38;
   position: relative;
   z-index: 2;
 }
@@ -8167,7 +8167,7 @@ a.text-theme:hover,
   content: "";
   height: 100%;
   width: calc(100% - 10px);
-  background-color: var(--title-color);
+  background-color: #99ddff;
   position: absolute;
   top: 0;
   left: 0;
