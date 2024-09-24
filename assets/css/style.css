@@ -30561,7 +30561,7 @@ span.select2-selection.select2-selection--single:focus {
   content: "";
   height: 140px;
   width: 140px;
-  background-color: #080e1c;
+  /* background-color: #080e1c; */
   border-radius: 50%;
   position: absolute;
   top: calc(50% - 70px);
