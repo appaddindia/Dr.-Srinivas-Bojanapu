@@ -90,7 +90,7 @@ Version: 1.0.0
   --theme-color2: #99ddff;
   --title-color: #141d38;
   --body-color: #737887;
-  --smoke-color: #f4fcfc;
+  --smoke-color: #d8f2ff;
   --smoke-color2: #e2e8fa;
   --smoke-color3: #eff1f9;
   --black-color: #000000;
@@ -259,7 +259,7 @@ ins {
 
 pre {
   font-family: var(--body-font);
-  background: #f4fcfc;
+  background: #d8f2ff;
   color: #666;
   font-size: 14px;
   margin: 20px 0;
@@ -9995,7 +9995,7 @@ blockquote,
   font-weight: 600;
   font-family: var(--body-font);
   color: var(--title-color);
-  background-color: var(--quote-bg, #f4fcfc);
+  background-color: var(--quote-bg, #d8f2ff);
   padding: 50px 40px 38px 165px;
   margin: 35px 0;
   line-height: 1.667;
@@ -15411,12 +15411,12 @@ ul.comment-list .th-comment-item:first-child > .th-post-comment {
 
 .sidemenu-wrapper .sidemenu-content::-webkit-scrollbar-track {
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.1);
-  background-color: #f4fcfc;
+  background-color: #d8f2ff;
 }
 
 .sidemenu-wrapper .sidemenu-content::-webkit-scrollbar {
   width: 2px;
-  background-color: #f4fcfc;
+  background-color: #d8f2ff;
 }
 
 .sidemenu-wrapper .widget {
