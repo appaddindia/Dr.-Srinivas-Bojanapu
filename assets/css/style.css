@@ -8494,7 +8494,10 @@ a.text-theme:hover,
 @media (max-width: 1199px) {
   .footer-top .footer-logo {
     text-align: center;
-    margin: 0 auto 35px auto;
+    /* margin: 0 auto 35px auto; */
+  }
+  .footer-top{
+    padding-top: 45px;
   }
 }
 
@@ -40734,6 +40737,12 @@ span.select2-selection.select2-selection--single:focus {
   .space-extra2,
   .space-extra2-bottom {
     padding-bottom: 70px;
+  }
+}
+@media (max-width: 1199px) {
+  
+  .footer-layout1 .footer-top{
+    padding-top: 45px;
   }
 }
 
