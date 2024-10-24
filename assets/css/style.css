@@ -6703,7 +6703,7 @@ a.text-theme:hover,
 }
 
 /* Large devices */
-@media (max-width: 1200px) {
+@media (max-width: 1320px) {
   .main-menu > ul > li > a {
     padding: 3px 20px 3px 25px;
   border-left: white solid 1px;
