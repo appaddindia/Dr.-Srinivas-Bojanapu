@@ -1471,7 +1471,7 @@ Contact Area
                                 <textarea name="message" id="message" cols="30" rows="3" class="form-control" placeholder="Write Your Message" required></textarea>
                             </div>
                             <div class="form-btn col-12">
-                                <button style="background-color: #00458b;" type="button" class="th-btn w-100" id="sendWhatsApp">MAKE AN APPOINTMENT</button>
+                                <button style="background-color: #00458b;" type="button" class="th-btn w-100" id="sendWhatsApp" onclick="submiter()">MAKE AN APPOINTMENT</button>
                             </div>
                         </div>
                         <p class="form-messages mb-0 mt-3"></p>
@@ -1785,7 +1785,7 @@ Blog Area
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-6">
-                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a href="https://themeforest.net/user/themeholy">Appaddindia</a>. All Rights Reserved.</p>
+                        <p class="copyright-text">Copyright <i class="fal fa-copyright"></i> 2024 <a href="appaddindia.net">Srinivas bojanapu</a>. All Rights Reserved.</p>
                     </div>
                     <div class="col-lg-6 text-end d-none d-lg-block">
                         <div class="footer-links">
@@ -1854,13 +1854,55 @@ Blog Area
         </svg>
     </div>
     <script>
-        document.getElementById('sendWhatsApp').addEventListener('click', function() {
+        function submiter() {
+    // Collect form data
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const treatment = document.getElementById("treatment");
+    const phone = document.getElementById("number");
+    const message = document.getElementById("message");
+    
+    // Simple validation
+    if (!name || !email || !treatment || !phone || !message) {
+        document.querySelector(".form-messages").innerText = "Please fill out all fields.";
+        return;
+    }
+
+    // Prepare data to send
+    const data = {
+        toke: "1dytfchtgfghvyhvvhvh",
+        toemail: ["vinayak@appaddindia.com"],
+        name: name,
+        department: treatment,
+        email: email,
+        phone: phone,
+        message: message
+    };
+
+    // Send POST request
+    fetch("https://email.appaddindia.net/company", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(responseData => {
+        // Process the response
+        alert("Your appointment request has been sent!")
+    })
+    .catch(error => {
+        alert("There was an error sending your request. Please try again later.")
+    });
+};
+         function sendWhatsApp() {
             // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const number = document.getElementById('number').value;
-            const message = document.getElementById('message').value;
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const subject = document.getElementById("treatment");
+            const number = document.getElementById("number");
+            const message = document.getElementById('message');
         
             // Format the message as a table
             const whatsappMessage = `
@@ -1878,7 +1920,7 @@ Blog Area
         
             // Open WhatsApp
             window.open(whatsappUrl, '_blank');
-        });
+        };
         </script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
