@@ -6698,7 +6698,7 @@ a.text-theme:hover,
     mask-size: cover;
   }
 }
-.dfklvd{
+.dfklvd {
   margin-left: 200px;
 }
 
@@ -6706,10 +6706,10 @@ a.text-theme:hover,
 @media (max-width: 1320px) {
   .main-menu > ul > li > a {
     padding: 3px 20px 3px 25px;
-  border-left: white solid 1px;
-  font-size: 14px;
+    border-left: white solid 1px;
+    font-size: 14px;
   }
-  .dfklvd{
+  .dfklvd {
     margin-left: 80px;
   }
 }
@@ -6835,10 +6835,10 @@ a.text-theme:hover,
   .header-layout1 .logo-bg {
     width: 56%;
   }
-  .header-logo{
+  .header-logo {
     padding: 0px;
   }
-  .dfklvd{
+  .dfklvd {
     margin-left: 0px;
   }
 }
@@ -8064,7 +8064,7 @@ a.text-theme:hover,
 }
 
 .footer-contact_link:hover {
-  color: var(--title-color);
+  color: #99ddff;
 }
 
 .info-box {
@@ -8496,7 +8496,7 @@ a.text-theme:hover,
     text-align: center;
     /* margin: 0 auto 35px auto; */
   }
-  .footer-top{
+  .footer-top {
     padding-top: 45px;
   }
 }
@@ -30445,7 +30445,7 @@ span.select2-selection.select2-selection--single:focus {
 /* faq 11 start ------------------------------*/
 .accordion-card.style11 .accordion-button {
   color: var(--title-color);
-  background-color:white;
+  background-color: white;
   border-radius: 10px;
   font-weight: 500;
 }
@@ -30460,11 +30460,7 @@ span.select2-selection.select2-selection--single:focus {
     var(--theme-color) 0%,
     var(--theme-color2) 100%
   );
-  background: linear-gradient(
-    180deg,
-    #00458b 0%,
-    #00458b 100%
-  );
+  background: linear-gradient(180deg, #00458b 0%, #00458b 100%);
   border-radius: 10px 10px 0px 0px;
   color: var(--white-color);
   box-shadow: none;
@@ -30767,11 +30763,11 @@ span.select2-selection.select2-selection--single:focus {
     clip-path: none;
   }
 }
-.first-stick{
+.first-stick {
   position: sticky;
   top: 0px;
 }
-.first-sec{
+.first-sec {
   position: sticky;
   top: 120px;
 }
@@ -30779,13 +30775,13 @@ span.select2-selection.select2-selection--single:focus {
   .cta-area5 {
     padding: 120px 0;
   }
-  .first-stick{
+  .first-stick {
     position: relative;
     top: 0px;
   }
-  .first-sec{
+  .first-sec {
     position: relative;
-    top:0px;
+    top: 0px;
   }
 }
 
@@ -40740,8 +40736,7 @@ span.select2-selection.select2-selection--single:focus {
   }
 }
 @media (max-width: 1199px) {
-  
-  .footer-layout1 .footer-top{
+  .footer-layout1 .footer-top {
     padding-top: 45px;
   }
 }
