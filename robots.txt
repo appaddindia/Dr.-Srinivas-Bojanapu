@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-sitemap:https://srinivasbojanapu.in/sitemap.xml
+sitemap:https://www.srinivasbojanapu.in/sitemap.xml
