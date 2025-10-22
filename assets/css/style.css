@@ -2130,148 +2130,8 @@ textarea.is-invalid {
 /*======================= 
     Preloader
 =======================*/
-.preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 999;
-  background-color: var(--white-color);
-}
-
-.th-preloader {
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Extra small devices */
-}
-
-.th-preloader .animation-preloader {
-  position: absolute;
-  z-index: 100;
-}
-
-.th-preloader .animation-preloader .txt-loading {
-  font-family: var(--title-font);
-  font-size: 72px;
-  line-height: 82px;
-  font-weight: 700;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.th-preloader .animation-preloader .txt-loading .characters {
-  color: rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-
-.th-preloader .animation-preloader .txt-loading .characters:before {
-  -webkit-animation: characters 4s infinite;
-  animation: characters 4s infinite;
-  color: var(--theme-color);
-  content: attr(preloader-text);
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  -webkit-transform: rotateY(-90deg);
-  transform: rotateY(-90deg);
-}
-
-.th-preloader
-  .animation-preloader
-  .txt-loading
-  .characters:nth-child(2):before {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-.th-preloader
-  .animation-preloader
-  .txt-loading
-  .characters:nth-child(3):before {
-  -webkit-animation-delay: 0.4s;
-  animation-delay: 0.4s;
-}
-
-.th-preloader
-  .animation-preloader
-  .txt-loading
-  .characters:nth-child(4):before {
-  -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
-
-.th-preloader
-  .animation-preloader
-  .txt-loading
-  .characters:nth-child(5):before {
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-}
-
-.th-preloader
-  .animation-preloader
-  .txt-loading
-  .characters:nth-child(6):before {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-@media (max-width: 575px) {
-  .th-preloader .animation-preloader .txt-loading {
-    font-size: 30px;
-    line-height: 30px;
-  }
-}
 
 /* Animation of letters loading from the preloader */
-@-webkit-keyframes characters {
-  0%,
-  75%,
-  100% {
-    opacity: 0;
-    -webkit-transform: rotateY(-90deg);
-    transform: rotateY(-90deg);
-  }
-  25%,
-  50% {
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-}
-@keyframes characters {
-  0%,
-  75%,
-  100% {
-    opacity: 0;
-    -webkit-transform: rotateY(-90deg);
-    transform: rotateY(-90deg);
-  }
-  25%,
-  50% {
-    opacity: 1;
-    -webkit-transform: rotateY(0deg);
-    transform: rotateY(0deg);
-  }
-}
 
 /*------------------- 3.2. Buttons -------------------*/
 .th-btn {
@@ -33782,14 +33642,14 @@ button.tinvwl_button_view.th-btn .ftinvwl.ftinvwl-heart-o {
     gap: 25px;
   }
 }
-
+/* 
 @media (max-width: 767px) {
   .choose-feature {
     display: block;
     max-width: 100%;
     margin: auto;
   }
-}
+} */
 
 .choose-feature .box-icon {
   position: relative;
@@ -33842,7 +33702,7 @@ button.tinvwl_button_view.th-btn .ftinvwl.ftinvwl-heart-o {
 }
 
 /* Small devices */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .choose-feature {
     text-align: center;
     padding: 0px 20px;
@@ -33853,10 +33713,10 @@ button.tinvwl_button_view.th-btn .ftinvwl.ftinvwl-heart-o {
     padding-top: 0;
     padding-left: 0;
   }
-}
+} */
 
 /* Extra small devices */
-@media (max-width: 575px) {
+/* @media (max-width: 575px) {
   .choose-feature {
     max-width: 100%;
     width: 100%;
@@ -33866,7 +33726,7 @@ button.tinvwl_button_view.th-btn .ftinvwl.ftinvwl-heart-o {
     margin-left: auto;
     margin-right: auto;
   }
-}
+} */
 
 /* Feature 7 ---------------------------------- */
 .feature-wrap7 {
@@ -36062,3 +35922,40 @@ button.tinvwl_button_view.th-btn .ftinvwl.ftinvwl-heart-o {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #333;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+@media (max-width: 575px) {
+  .aaaaa {
+    padding: 0px 15px;
+  }
+}
+.small {
+  display: none;
+}
+@media (max-width: 768px) {
+  .small {
+    display: block;
+  }
+}
